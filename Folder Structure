@@ -1,0 +1,29 @@
+teos-wallet-dashboard/
+├── wallet-frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── components/
+│   │       └── WalletStatus.jsx
+│   ├── vite.config.js
+│   ├── package.json
+│   └── README.md
+│
+├── wallet-backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── routes/
+│   │   └── wallet.py
+│   ├── utils/
+│   │   └── supabase.py
+│   └── README.md
+│
+├── docs/
+│   ├── roadmap.md
+│   ├── setup.md
+│   └── qa.md
+│
+├── .env.example
+└── README.md
