@@ -1,9 +1,7 @@
 # 🏛️ TEOS Wallet Dashboard
 
 The official civic wallet interface for Egypt’s digital movement. Built by Elmahrosa for the TEOS Network Ecosystem, this dashboard blends blockchain innovation with cultural legacy—empowering users to connect, mint, refer, and earn $TEOS while reinforcing national identity.
-
 ---
-
 ## 📜 License & Status
 
 ![Status](https://img.shields.io/badge/Status-Live-brightgreen)
@@ -21,6 +19,9 @@ Certified under multiple ISO standards for security, sustainability, and civic i
 - ...and more
 
 ---
+## 📜 Petition
+- [Sign the Petition for Digital Currency Regulation in Egypt](#)
+
 
 ## 🌍 Mission Statement
 
@@ -84,6 +85,17 @@ Certified under multiple ISO standards for security, sustainability, and civic i
 - 🔜 Phase 4: Mining App Integration
 - 🔜 Phase 5: Global Multi-Chain Expansion
 
+## 🔗 Official Links
+### 🌐 Website & Wallet
+- [TEOS Wallet](#)
+- [DexLab Token Overview](#)
+- [Solscan Token Explorer](#)
+
+## 📢 Socials
+- Twitter: `KING_TEOS_EGYPT` | `TEOSEGYPT`
+- Telegram: [Elmahrosa Community](#)
+- GitHub: [Elmahrosa](#)
+
 
 ## 🚀 Getting Started
 
@@ -96,5 +108,6 @@ cd teos-wallet-dashboard
 - Validate referral flow: `docs/referral-test.md`
 - NFT minting QA: `docs/nft-qa.md`
 
-🏛️ Built by Elmahrosa
+🏛️ 🏆 Credits
+Built by Elmahrosa for the TEOS Network Ecosystem — blending heritage, innovation, and community empowerment.
 
