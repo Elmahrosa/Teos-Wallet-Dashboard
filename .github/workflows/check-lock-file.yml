@@ -2,9 +2,9 @@ name: Check for Dependency Lock File
 
 on:
   push:
-    branches: [main]
+    branches: [main] # Or your main development branch, e.g., 'master', 'develop'
   pull_request:
-    branches: [main]
+    branches: [main] # Or your main development branch
 
 jobs:
   check-lock-file:
@@ -13,9 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check for at least one dependency lock file
+      - name: Verify pnpm-lock.yaml exists
         run: |
-          if [ ! -f package-lock.json ] && [ ! -f yarn.lock ]; then
-            echo "Error: Neither package-lock.json nor yarn.lock found. Please run your package manager install (npm or yarn) and commit the generated lock file."
+          if [ ! -f pnpm-lock.yaml ]; then
+            echo "::error file=pnpm-lock.yaml::Missing pnpm-lock.yaml file!"
+            echo "The 'pnpm-lock.yaml' file is required to ensure consistent builds."
+            echo "Please run 'pnpm install' locally and commit 'pnpm-lock.yaml' to your repository."
             exit 1
           fi
+          echo "pnpm-lock.yaml found. Proceeding with checks."
