@@ -13,9 +13,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check for dependency lock file
+      - name: Check for at least one dependency lock file
         run: |
-          if [ ! -f package-lock.json ] && [ ! -f yarn.lock ] && [ ! -f pnpm-lock.yaml ]; then
-            echo "Error: No dependency lock file found (package-lock.json, yarn.lock, or pnpm-lock.yaml). Please generate and commit one."
+          if [ ! -f package-lock.json ] && [ ! -f yarn.lock ]; then
+            echo "Error: Neither package-lock.json nor yarn.lock found. Please run your package manager install (npm or yarn) and commit the generated lock file."
             exit 1
           fi
